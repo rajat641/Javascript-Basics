@@ -1,0 +1,40 @@
+- JS is lightwight - Doesn't eat much computer memmory and has simple syntax, features
+- JS is cross-platform - Can be used not only for web but also for other purposes as well.
+- JS is object oriented- Uses objects
+
+- One of the three core in web with HTML CSS
+- Before, used only on browser
+- Now because of node.js, we can use JS on server as well
+- Allows dynamic and interactive feature
+- Rect/Angular/Jquery are 100% based on JS
+- HTML sees content
+- CSS is for styling/presentation
+- JS  adds effect and dynamic nature
+<p> </p> means a para- Noun- HTML
+p{color:red;} - color the para- Adjective- CSS
+p.hide() - hide para - Verb - Javascript
+Use ES5 right now.
+---------------------------------------------
+5 differen primitive DT
+primitive means - non object DT
+1. Number -  always floating number ex 5 is like 5.0000
+2. String 
+3. Boolean - true/false
+4.Undefined - Data type of a varible that does not have a value yet
+5. Null - also means 'non-existent' - more specific
+-----------------------------------------------------------
+JS is dynamic typed . Here we don't have to define the type of variable like we do in C/Java. Like Python.
+saves coding type but can lead to bugs
+----------------------------------------------------------
+Always give a meaning name to variables.
+camelCase - firstname - lower case and later like upper case
+---------------------------------------------------
+ex - rajatSingh, firstName
+var job;
+console.log(job); --> undefined
+----------------------------------------
+Some rules:
+- Var name can't start with a number. we can have a _ or $
+ var john/mark---> dont work
+- we cannot use reserve JS keywords
+  var function or var delete won'y work as varible name
