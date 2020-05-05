@@ -38,3 +38,20 @@ Some rules:
  var john/mark---> dont work
 - we cannot use reserve JS keywords
   var function or var delete won'y work as varible name
+--------------------------------------------------------------
+Type coercion : Data type is automatic converted to string
+Automatic type conversion
+
+Boolean -> string
+UNDEFINED-> string
+
+console.log('John'+ 28)
+---------------------------------------------
+Var Mutation
+
+var age = 18
+age = 'twenty eight'
+-------------------------------------------------
+Page keeps on loading until we click OK for an alert message.
+alert("This is awesome").
+alert is an alternative to console.log
