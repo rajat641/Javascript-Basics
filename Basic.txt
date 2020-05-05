@@ -55,3 +55,14 @@ age = 'twenty eight'
 Page keeps on loading until we click OK for an alert message.
 alert("This is awesome").
 alert is an alternative to console.log
+-------------------------------------------------
+In JS, opertors are like functions written in a special way
+typeof - tells var type
+---------------------------
+Refer for Operator precendence on :
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+= or assignment as lowest precendence
+Associativity decides the direction od execution of operators.
+-----------------------------------
+
