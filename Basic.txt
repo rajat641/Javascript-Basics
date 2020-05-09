@@ -65,4 +65,37 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Oper
 = or assignment as lowest precendence
 Associativity decides the direction od execution of operators.
 -----------------------------------
+Ternary operator has 3 input
+age >=18 ? console.log(name+ " can drink beer"): console.log('He can\'t drink beer');
+------------------------------
+USE SWITCH to avoid excessive if-else blocks
+ use switch(true){
+ 	case age <13:
+ 		console.log('He is a boy');
+ 		break;
+ }
+ --------------------------------------------------
 
+falsy values : undefined, null, 0, '', Nan// not a number
+truthy vakues : NOT falsy values
+
+var height;
+
+if(height){
+	console.log('varibale is defined')
+}else{
+	console.log('Variable is not defined')
+}
+-------------------------
+use === to avoid bugs
+
+=== -> strict equality conversion
+== -> type coersion i.e data type need not to be matched
+
+var height = 23;
+
+if(height == '23'){
+	console.log('the == operator does type coercion!!...');
+}
+-----------------------------------------
+parseInt() -> gives output as Interger
