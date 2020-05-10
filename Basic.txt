@@ -99,3 +99,32 @@ if(height == '23'){
 }
 -----------------------------------------
 parseInt() -> gives output as Interger
+
+JS happens to execute in sequence. Before rendering HTML, JS may execute.
+so script tag must be put at last
+
+prompt() is an inbuilt function.
+every function is JS by default return undefined .
+----------------------------------
+Topics : Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.
+------------------------------
+Diff between JS expression and statements
+JS expression results in somethings and produces some result
+JS expression always produces a result
+typeof(23)<-- expression
+whereas statements dont immediate produce a value
+if/else <-- statement
+fucntion expression produces an immediate result whereas function declarations do  not.
+-----------------------------------------------------
+Arrays - Different DT are allowed inside array
+push- append at back
+pop - remove from back
+unshift - append at front
+shift - remove at front
+indexOf - checks if a number is present in array
+sort( comparator fxn)
+sort(function(a, b){return b-a});
+----------------------------
+arrays order matter whereas not in objects
+objects are like struct in C;
+objects can have vars, arrays, methods;

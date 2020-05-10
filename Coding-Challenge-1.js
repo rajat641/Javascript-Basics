@@ -12,6 +12,7 @@ GOOD LUCK 😀
 /*
 */
 
+
 var markWeight = 12 //kg  
 var markHeight= 1,66 // meters;
 
@@ -23,4 +24,3 @@ var bmiJohn = johnWeigh / johnHeight * johnHeight
 
 if (bmiMark > bmiJohn){
 	console.log("Yes, Mark BMI is more.")
-}

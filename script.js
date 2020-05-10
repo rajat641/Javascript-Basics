@@ -172,7 +172,7 @@ Ternary Operator
 //  	case 'teacher':
 //  		console.log('the job is a teacher')
 //  		break
-//  	case deafult:
+//  	case default:
 //  		console.log('Job is not known')
 //  }
 
@@ -180,13 +180,95 @@ Ternary Operator
 // falsy values : undefined, null, 0, '', Nan// not a number
 // truthy vakues : NOT falsy values
 
-var height;
+// var height;
 
-if(height){
-	console.log('varibale is defined')
-}else{
-	console.log('Variable is not defined')
-}
+// if(height){
+// 	console.log('varibale is defined')
+// }else{
+// 	console.log('Variable is not defined')
+// }
+
+/**** function in JS
+***/
+// go('Rajat', 23);
+// function go(name , age){
+// 	alert('the name is: ' + name +' age is '+ age);
+// }
+
+/*** function statements
+**/
+// fxn declaration
+ // function whatYouDo{
+
+ // }
+
+
+// function expression
+// var whatYouDo = function(job, firstName) {
+// 	switch(job){
+// 		case 'teacher':
+// 			return firstName +' is a teacher';
+// 		case ' driver':
+// 			return firstName +' is a driver'; 
+// 		default:
+// 			return firstName + ' is something';
+// 	}
+
+// }
+// console.log(whatYouDo('teacher','Rajat'));
+
+/***
+Arrays
+**/
+
+// var names = ['John', 'Mark', 'Jane'];
+
+// var years = new Array(1990, 1969);// not much used
+
+// names[4]='Raj';
+// names[names.length]=1;
+
+// console.log(names[0]);
+// console.log(names);
+// console.log(names.length);
+
+// // method specific to arrays
+// names.push('BLUE'); // push at end
+// console.log(names)
+// names.unshift('Mr'); // insert at front
+
+// names.pop(); // remove from end;
+// names.shift();// remove from front
+// var dup = [1,2,3,2];
+// console.log(names);
+// console.log('Hi')
+// console.log(dup.indexOf(2));
+// var names = ['Rajat', 'Arun', 'Suresh', 'Pop'];
+// console.log(names.sort())
+
+/** object and properties
+**/
+ var names={
+ 	firstName :'John',
+ 	lastName : 'Sing',
+ 	family : ['Jane', 'Mark'],
+ 	isMarried: false,
+ 	profession: function(){
+ 		return this.firstName;
+ 	}
+ };
+console.log(names);
+console.log(names.firstName);
+console.log(names.profession())
+
+
+
+
+
+
+
+
+
 
 
 
