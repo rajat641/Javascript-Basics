@@ -115,6 +115,7 @@ typeof(23)<-- expression
 whereas statements dont immediate produce a value
 if/else <-- statement
 fucntion expression produces an immediate result whereas function declarations do  not.
+
 -----------------------------------------------------
 Arrays - Different DT are allowed inside array
 push- append at back
@@ -124,7 +125,40 @@ shift - remove at front
 indexOf - checks if a number is present in array
 sort( comparator fxn)
 sort(function(a, b){return b-a});
+A method in JS is a fucntion belonging to a object;
 ----------------------------
 arrays order matter whereas not in objects
 objects are like struct in C;
 objects can have vars, arrays, methods;
+
+var x = new Array(20); // allocates memory dynamically
+
+--------------------------------------------------
+
+JS - 1995 known as Livescript
+1997: ES1: first version of JS
+2015: ES6: biggest update in Javascript
+now every year a new version is released.
+old browsers might not understand the newer version
+so we use Transpiling and polyfiling to convert ES6(New version) to ES5;
+Use ES6 compatability table
+------------------------
+var  vs let
+var scope is not limited to the block but only limited to the function
+let is limited to block
+var is little different 
+let, const => block scoped
+var => function-scoped
+ var is defined outside a function so its attached to window object of browser.
+ window object is huge; This is not a case with let.
+ object is gnerally global so its bad to define var outside as there can be over-writing.
+ window.user_defined_method()=> bad practice.
+ +++++++++++++++++++++++++
+ const is same as let but it doesn't allow to change the object but we can change its property.
+
+ const x = 1;
+ x = 2; //error
+
+ const x = {name:'rajat'};
+ x.name = 'rajat' // works fine.
+ ++++++++++++++++++++++++++++++++++++++++++++++
