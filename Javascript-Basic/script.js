@@ -248,25 +248,36 @@ Arrays
 
 /** object and properties
 **/
- var names={
- 	firstName :'John',
- 	lastName : 'Sing',
- 	family : ['Jane', 'Mark'],
- 	isMarried: false,
- 	profession: function(){
- 		return this.firstName;
- 	}
- };
-console.log(names);
-console.log(names.firstName);
-console.log(names.profession())
+//  var names={
+//  	firstName :'John',
+//  	lastName : 'Sing',
+//  	family : ['Jane', 'Mark'],
+//  	isMarried: false,
+//  	profession: function(){
+//  		return this.firstName + this.lastName;
+//  	}
+//  };
+// console.log(names.profession())
 
+/**** loops and iteration
+***/
+// for(var i=0;i<10;i++){
+// 	console.log(i);
+// }
+// var x = new Array(20);
+// console.log(x.length);
 
-
-
-
-
-
+/*************
+ implement for each
+ */
+ var sum =0;
+  var test = ['a','b','c',1,2,3]
+  test.forEach(function(a, b){
+  	if(typeof(a)=='number'){
+  		sum+=a;
+  	}
+  });
+  console.log(sum)
 
 
 

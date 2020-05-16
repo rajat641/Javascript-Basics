@@ -162,3 +162,14 @@ var => function-scoped
  const x = {name:'rajat'};
  x.name = 'rajat' // works fine.
  ++++++++++++++++++++++++++++++++++++++++++++++
+For Each In Javascript
+  var sum =0;
+  var test = ['a','b','c',1,2,3]
+  test.forEach(function(a, b){
+  	if(typeof(a)=='number'){
+  		sum+=a;
+  	}
+  });
+  console.log(sum)
+  There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++
