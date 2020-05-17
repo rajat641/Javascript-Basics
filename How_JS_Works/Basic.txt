@@ -1,0 +1,22 @@
+JS is hosted usually in some enviroment like brower. Node server etc
+V8 engine/ SpiderMonkey/ Javascript core etc - Common JS engines
+
+Engine ==> Parser(Syntax Check) ==> Abstract Syntax Tree ==>Machine code conversion ==> Code Runs
+Different Engines do things in a different way
+
+------------------------------------------------------------------------------------------------------
+Execution context is like a box/wrapper where our code vars are stored and in which a piece of our code
+is evaluated and executed
+Default executon context is global context - code that is not inside any function
+Execution context is like an object. So a global execution context is a global object which is a window object in browser
+lastname / window.lastname is same thing.
+lastname become property of window object.
+
+every function gets its own execution context
+Execution stack - stacks upon excution contexts
+
+------------------------------------------------------------------
+Execution Context object has 3 properties :
+1. Variable Object (VO) - All vars and functions declarations
+2. Scope Chain - all current variables object and variable objeect of parents
+3. 'This'
