@@ -27,7 +27,7 @@ Execution Context object is put over execution stack in 2 phases
 
 
 VO
-1. The argument object is created , containing all the arguments thta were passed to a fucntion
+1. The argument object is created , containing all the arguments that were passed to a function
 2. The code is scanned for function declaration: for each function, a  property is created in the VO, pointing to that function
 3. Code is scanned for variable declaration: for each variable, a property is created in the VO, and set to undefined
 
@@ -36,3 +36,28 @@ but they are hoisted in different manner. Vars are set to undefined whereas for 
 
 Hoisting happens at Creation phase
 Hoisting works for function declaration not fucntion expression.
+---------------------------------------------------------------------------
+Creation of Scope Chain: Scope chain finds where we can accessa certain variable
+Each fucntion has a scope. And to create a new scope, we just need to create a new fucntion. No IF-ELSE, FOR etc might help.
+Lexical Scoping : Related to position of a function. For a nested fucntion, a child function will have access to scope of parent function
+
+var a ='Hello' ---> globla scope
+first()  ---> globla scope
+
+function first(){																							SCOPE CHAIN
+	var b ="Hi"   ---->> localscope + global scope                                                            ^
+	second()																								  |	
+	function second(){																						  |	
+		var c = "Hey!!" -->> local scope1 + localscope + global scope /// a and b are found due to scope chain|
+		console.log(a + b + c);
+	}
+}
+SCOPE CHAIN don't work in opposite direction i.e top to bottom
+Use lecture 40. SCOPE CHAIN FOR MORE
+IMP: Scope chain and Execution context are different 
+-----------------------------------------------------------------------------------------------------
+'This' Keyword - each and every execution context has its own this variable
+It is stored in execution context object
+- For a regulat function: this keyword points to the global object(window object in browser)
+- Method call- this object points to the object that is calling the method
+IMP: this varible is not assigned a value until a function where it is actually defined is called.
