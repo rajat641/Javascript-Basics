@@ -1,0 +1,20 @@
+JS interact with HTML: DOM Manipulation
+DOM: Document Object Model
+structured representiton of an HTML Doc
+each HTML block has an object in DOM. We cna interact with that object and change it through JS code.
+
+JS and DOM are different things
+DOM MANIPULATION ==> HTML CHANGE
+We change DOM through methods so there are objects attached to it. we call it Document object.
+Document object gives access to DOM and we can manipulate the HTML.
+-------------------------------------------------------------------
+HTML/CSS Basics
+<div class="wrapper clearfix"> -> div is an attribute
+alt, id, class -->attribute
+div vs id difference--> id has to be unique whereas div can be same throughout the page
+CSS--> rules to style the webpage.
+we connect HTML to CSS using class/id. Most common is class name.
+
+--------------------------------------
+query selector works similar to CSS
+select the ID and change its text content
