@@ -14,7 +14,43 @@ alt, id, class -->attribute
 div vs id difference--> id has to be unique whereas div can be same throughout the page
 CSS--> rules to style the webpage.
 we connect HTML to CSS using class/id. Most common is class name.
+https://css-tricks.com/the-difference-between-id-and-class/
 
 --------------------------------------
 query selector works similar to CSS
 select the ID and change its text content
+ The <div> tag defines a division or a section in an HTML document.
+ ------------------------------------------------
+ Events: Notifiction that are sent to notify the code that something happened on the webpage.
+ Example: Clicking a button, resize a window, switching a tab, pressing a key.
+ Event listner(functions only): A function that performs an action based on a certain event. It waits for a specific evernt to happen.
+ Like show a pop up, doing some animation.
+
+ How are events processed ?
+ All events are sit inside a message queue.
+ Events can execute as soon as the exection stack with exection context is empty. i.e all functions have returned
+
+global exectuion context is always there in stack.
+
+events are picked from the queue and their execution context is put on the stack
+https://developer.mozilla.org/en-US/docs/Web/Events
+----------------------------------------------------
+Anonymous fucntion - that diesn't have a name
+function(){}
+It can only be used where its called
+--------------------
+Arrow function
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+-------------------------------------------
+getElementById works faster than querySelector
+
+
+
+
+
+
+
+
+
+
+

@@ -171,5 +171,30 @@ For Each In Javascript
   	}
   });
   console.log(sum)
+
+----------------------------------------------------------------------
+
   There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
-  ++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+
+https://www.hackerrank.com/challenges/js10-throw/topics/javascript-errors
+https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
+------------------------------------------------------------------------------------
+Methods creation :
+1. Use new methdod() or  var obj = {'prop':'xyz'}
+2. Use constrcutor passing this object as 'this' value.
+var player = new GamePlayer("John Smith", 15, 3);
+
+The code above creates an instance of GamePlayer and stores the returned value in the variable player. 
+In this case, you may want to define the function like this:
+
+function GamePlayer(name,totalScore,gamesPlayed) {
+  // `this` is the instance which is currently being created
+  this.name =  name;
+  this.totalScore = totalScore;
+  this.gamesPlayed = gamesPlayed;
+  // No need to return, but you can use `return this;` if you want
+}
+------------------------------------------------------------------------
+
+
