@@ -59,6 +59,7 @@ https://gomakethings.com/javascript-selector-performance/
 - textContent can prevent XSS attacks.
 XSS attack - insert malicious code i.e HTML that can be threat to a system.
 -----------------------------------------------------------------------------------------
+Use disabled = true to freeze a button
 
 
 

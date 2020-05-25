@@ -12,15 +12,22 @@ is GLBAL score. After that, it's the next player's turn
 
 */
 
+/*
+New GAME rule:
+A player looses his ENTIRE score when he rolls two 6 in a row. 
+After that, it's the next player's turn. (Hint: Always save the previous dice roll in a separate variable)
+*/
+
 
 var score, roundScore, activePlayer ;
-
+var prevScore ;
 var gamePlaying = true; // maintains sttate og the game
 // As we use  DRY principle
 function init(){
 	scores = [0, 0];
 	roundScore = 0;
 	activePlayer= 0;
+  prevScore = -1;
 	document.getElementById('score-0').textContent  = '0'
 	document.getElementById('score-1').textContent  = '0'
 	document.getElementById('current-0').textContent  = '0'
@@ -89,7 +96,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
  if(gamePlaying){
  	//1. Random Number
   var dice = Math.floor(Math.random()*6) + 1 // we can't access varibles in scope of other functions
-
+  dice = 6;
   //2. Display the result
   var diceDOM =document.querySelector('.dice');
   // show dice image based on dice number
@@ -100,11 +107,24 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   //3. update the round score IF rolled number was not a 1
   // != do type coersion
   if(dice !== 1){
+
+    if(dice == 6){
+      if(prevScore == 6){
+        prevScore = -1; // rsetting the previous score to -1
+        nextPlayer()
+      }else{
+        prevScore = 6;
+      }
+    }else{
+      prevScore = -1;
+    }
   	// Add score
   	roundScore+=dice;
   	document.querySelector('#current-'+ activePlayer).textContent =roundScore;
 
   }else{
+
+
   	// next player turn
   	// activePlayer = activePlayer == 1 ? 0:1; // ternary operator
   	// roundScore = 0; // reset round score
@@ -189,7 +209,6 @@ function nextPlayer(){
 	activePlayer = activePlayer == 1 ? 0:1; // ternary operator
   	roundScore = 0; // reset round score
 
-
   	document.getElementById('current-0').textContent = '0';
   	document.getElementById('current-1').textContent = '0';
   	// as soon as player changes, we add active class to new player and remove it from previous player
@@ -216,3 +235,4 @@ Change the game to follow these rules:
 2. Add an input field to the HTML where players can set the winning score, so that they can change the predefined score of 100. (Hint: you can read that value with the .value property in JavaScript. This is a good oportunity to use google to figure this out :)
 3. Add another dice to the game, so that there are two dices now. The player looses his current score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a look at the CSS code for the first one.)
 */
+// Doing Task-1 Here

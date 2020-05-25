@@ -11,9 +11,11 @@ is GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
 */
+// Add an input field to the HTML where players can set the winning score, so that they can change the predefined score of 100. 
+//(Hint: you can read that value with the .value property in JavaScript. This is a good oportunity to use google to figure this out :)
 
 
-var score, roundScore, activePlayer ;
+var score, roundScore, activePlayer , finalScore;
 
 var gamePlaying = true; // maintains sttate og the game
 // As we use  DRY principle
@@ -21,6 +23,7 @@ function init(){
 	scores = [0, 0];
 	roundScore = 0;
 	activePlayer= 0;
+  finalscore = 0;
 	document.getElementById('score-0').textContent  = '0'
 	document.getElementById('score-1').textContent  = '0'
 	document.getElementById('current-0').textContent  = '0'
@@ -44,6 +47,14 @@ function init(){
 }
 
 init();
+
+
+document.querySelector('#wer').addEventListener('click', function(){
+    var newScore= document.getElementById('finalscore').value;
+    console.log(newScore);
+    finalScore = newScore;
+    document.getElementById('wer').disabled = true;
+});
 
 //dice = Math.floor(Math.random()*6) + 1 // gives a number between 0 and 1
  //console.log(dice)
@@ -168,7 +179,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
  //  	document.querySelector('.dice').style.display = 'None';
 
  // if player won
-	 if(scores[activePlayer] >= 20){
+	 if(scores[activePlayer] >= finalScore){
 	 		// document.querySelector('#name-'+activePlayer).textContent = 'Winner!!';
 	 		document.getElementById('name-'+activePlayer).textContent = 'Winner!!';
 	 		document.querySelector('.dice').style.display = 'None';
