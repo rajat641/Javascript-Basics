@@ -1,0 +1,34 @@
+Everythin in JS is an object.
+Not entirely true as we have 2 big types of values
+primitives and Everthing else.
+ Primitives -> Numbers, Strings, Bools, Undefined, Null
+ Everything else -> Array, fuctions, Objects, Dates, Wrapper for Numbers etc
+ -------------------------------------------------------
+
+ We can use a constructor/prototype(Other lang call is classes) to create Objects
+
+
+ Person Constructor ==> Rajat, Abhishek, Aryan etc
+ Inheritence in General -> one object is based on  another. One object gets access to other objects vars and properties.
+
+ Person --> Athelete (Can use inheritence)
+ Athelet can now access Person object properties(less code and more logic)
+ ------------------------------------------------------------------------
+ Inheritence in JS: Prototype and Prototype chain
+ JS is prototype based lang.
+ Each and every JS object has a prototype property to it.
+ We put methods and vars in prototype property os that other objects can use them or inherit them.
+ Prototype of a 'PERSON` is prototype of all its instances.
+  PERSON objects itself is an istance of a bigger constructor Object().
+
+  John()  --> Person() --> Object()
+
+  John object can access methods of person() and Object()
+
+  --------> PROTOTYPE CHAIN---------------------------->
+  JS first tries to find a method on that objects, later it tries to find it in its prototype that is the prototype property of its parent
+  So it moves up in the chain. It continues to do so until there is no more prototype is there i.e NULL. NULL has no prototype and finally undefined is returned
+
+
+-------------------------------------------------------------
+The constructor's Prototype prop is NOT te prototype of the constructor itself, its the prototype of ALL instances that are created through it.
