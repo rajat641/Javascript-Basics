@@ -196,5 +196,3 @@ function GamePlayer(name,totalScore,gamesPlayed) {
   // No need to return, but you can use `return this;` if you want
 }
 ------------------------------------------------------------------------
-
-

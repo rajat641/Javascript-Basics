@@ -53,7 +53,7 @@ Any function has access to global scope or scope of its parent
 getElementById is better supported than querySelector
 https://gomakethings.com/javascript-selector-performance/
 
-- textContent uses straight text, does not parse HTML, and is faster
+- textContent uses straight text, does not parse HTML, and is faster and safer as well
 - innerHTML parses content as HTML, so it takes longer.
 -innerText Takes styles into consideration. It won't get hidden text for instance.
 - textContent can prevent XSS attacks.
@@ -61,11 +61,5 @@ XSS attack - insert malicious code i.e HTML that can be threat to a system.
 -----------------------------------------------------------------------------------------
 Use disabled = true to freeze a button
 
-
-
-
-
-
-
-
-
+For security, you can disbale window.console.log/ window.document.getElementById
+This can prevent attacks

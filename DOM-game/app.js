@@ -13,6 +13,34 @@ is GLBAL score. After that, it's the next player's turn
 */
 
 
+function disableJS(){
+  var _z = console;
+  Object.defineProperty( window, "console", {
+    get : function(){
+        if( _z._commandLineAPI ){
+      throw "Sorry, Can't execute scripts!";
+              }
+        return _z; 
+    },
+    set : function(val){
+        _z = val;
+    }
+  });
+}
+
+// window.console.log = function(){
+//     console.error('The developer console is temp...');
+//     window.console.log = function() {
+//         return false;
+//     }
+// }
+
+with ((console && console._commandLineAPI) || {}) {
+  console.log(console._commandLineAPI)
+  window.defineProperty(console, '_commandLineAPI',
+   { get : function() { throw 'Nooo!' } })
+}
+//disableJS();
 var score, roundScore, activePlayer ;
 
 var gamePlaying = true; // maintains sttate og the game
@@ -39,7 +67,7 @@ function init(){
 
 	document.querySelector('.player-0-panel').classList.add('active'); 
 	//document.querySelector('.player-1-panel').classList.remove('active');
-
+  
 
 }
 

@@ -58,6 +58,6 @@ IMP: Scope chain and Execution context are different
 -----------------------------------------------------------------------------------------------------
 'This' Keyword - each and every execution context has its own this variable
 It is stored in execution context object
-- For a regulat function: this keyword points to the global object(window object in browser)
+- For a regular function: this keyword points to the global object(window object in browser)
 - Method call- this object points to the object that is calling the method
 IMP: this varible is not assigned a value until a function where it is actually defined is called.

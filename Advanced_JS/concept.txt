@@ -1,4 +1,4 @@
-Everythin in JS is an object.
+Everything in JS is an object.
 Not entirely true as we have 2 big types of values
 primitives and Everthing else.
  Primitives -> Numbers, Strings, Bools, Undefined, Null
@@ -31,4 +31,57 @@ primitives and Everthing else.
 
 
 -------------------------------------------------------------
-The constructor's Prototype prop is NOT te prototype of the constructor itself, its the prototype of ALL instances that are created through it.
+The constructor's Prototype prop is NOT the prototype of the constructor itself, its the prototype of ALL instances that are created through it.
+
+Each object we create in JS is an instance of the object constructor
+
+===========================================================DAY-2================================================================
+
+- Check if an object has a property
+john.hasOwnProperty('job') // excluded inherited object
+
+- john instanceOf Person --> true because it was created through Person fucntion constructor
+
+var a = []
+IMP: -->Use console.info(a)
+ to view all infor/ methods of Array object
+ We can access array methods due to prototype chain
+ These all methods are aprt of Array object .
+
+--> Use console.table(a)==> better view
+===========================================================================================================================
+
+RELATED TO NEW()
+With new() an empty new object is created and this var point to this empty object
+
+=====================================================================
+2nd way to create object -->
+Object.create() ==> allows more complex inheritence implementation 
+
+======================================================================
+
+PRIMITIVES VS OBJECTS
+
+var contaning primitives hold the actual data. Var hold the actual data ans not the reference
+
+vars associated to objects don't contain the objects itself. THey contain reference in memory where object is created
+=====================================================================
+
+Functions are also objects ans are instance of Object type
+- We can pass a fucntion as an argument to another function
+- We can return a function from a function
+ In JS, there are first class function ==> accept a function as an argument ands also return a function as well
+
+ The functions that we pass an argument are called as callback function.
+
+ They are use in writing bettr clean, reusable ans modular code
+
+
+
+
+
+
+
+
+
+
